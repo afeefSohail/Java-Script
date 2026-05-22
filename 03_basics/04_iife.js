@@ -13,8 +13,3 @@
     console.log(`DB CONNECTED TWO ${name}`);
     
 }) ('Afeef Sohail');
-
-
-
-
-   
