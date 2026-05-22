@@ -1,0 +1,51 @@
+/*  
++++++++++++ Java Script Execution Context ++++++++++
+=> https://www.youtube.com/watch?v=ByhtOgF6uYM&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=25
+
+{} -> Global Execution Context
+browser -> Window
+every render platform has its own GEC
+
+1. Global Execution Context
+2. Function Excecution Context
+3. Eval Excecution Context
+
+-[{java script code}]
+-- Memeory Creation Phase (memory allocation)
+-- Execution Phase
+
+let val1 = 10
+let val2 = 5
+function addNum(num1, num2) {
+    let total = num1 + num2
+    return total
+}
+
+let result1 = addNum(val1, val2)
+let result1 = addNum(10, 2)
+
+when code run steps
+1. Global Execution Context
+2. Memory Phase
+   - val1 -> undefined
+   - val2 -> undefined
+   - addnum -> defination
+   - result1 -> undefined
+   - result2 -> undefined
+3. Execution Phase
+   - val1 <- 10
+   - val2 <- 5
+   - result1 = 15 (after running his execution phase => addNum(val1, val2))
+   - result2 = 12 (after running his execution phase => addNum(10, 2))
+   -- addNum(val1, val2) -> [new variable + execution thread] ------> [Delete after execution]
+   --- Memory Phase  -------------> Execution Context 
+   ---- val1 -> undefined           -- num1 -> 10
+   ---- val2 -> undefined           -- num2 -> 5
+   ---- total -> undefined          -- total -> 15 (after this result1 updated in 3 step (Execution Phase))
+   
+   -- addNum(10, 2) -> [new variable + execution thread] ------> [Delete after execution]
+   --- Memory Phase  -------------> Execution Context 
+   ---- val1 -> undefined           -- num1 -> 10
+   ---- val2 -> undefined           -- num2 -> 2
+   ---- total -> undefined          -- total -> 12 (after this result2 updated in 3 step (Execution Phase))
+*/
