@@ -1,0 +1,23 @@
+/*
+ - work on LiFo if they are nested function
+    function one()
+    -function two()
+    -- function three()
+
+        |   three()  |
+        |   two()    |
+        |   one()    |
+        |   GEC.     |     
+        
+
+    - work on FiFO if they are seprate functions
+    function one()
+    function two()
+    function three()
+    
+        |   three()  |
+        |   two()    |
+        |   one()    |
+        |   GEC.     |     
+
+*/
