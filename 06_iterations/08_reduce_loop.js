@@ -8,9 +8,8 @@ const myTotal = myNums.reduce(function (acc, currval) {
 }, 0)
 
 // acc => accumulator is sum of values
-//curr => array current value
+// curr => array current value
 const myTotal = myNums.reduce( (acc, curr) => (acc + curr), 0)
-
 console.log(myTotal);
 
 
@@ -34,5 +33,4 @@ const shoppingCart = [
 ]
 
 const priceToPay = shoppingCart.reduce((acc, item) => (acc + item.price), 0)
-
 console.log(priceToPay);
