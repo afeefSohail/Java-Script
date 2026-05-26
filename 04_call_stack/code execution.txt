@@ -1,4 +1,3 @@
-/*  
 +++++++++++ Java Script Execution Context ++++++++++
 => https://www.youtube.com/watch?v=ByhtOgF6uYM&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=25
 
@@ -48,4 +47,3 @@ when code run steps
    ---- val1 -> undefined           -- num1 -> 10
    ---- val2 -> undefined           -- num2 -> 2
    ---- total -> undefined          -- total -> 12 (after this result2 updated in 3 step (Execution Phase))
-*/

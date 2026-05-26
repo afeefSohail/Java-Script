@@ -1,0 +1,20 @@
+- Default (Java Script)
+-- By default (Synchronous)
+-- By default (Single Thread)
+
+- Execution Context
+-- execute one line of code at a time
+-- console log -> 1
+-- console log -> 2
+-- each operation waits for the last one to complete before executing.
+-- [Call Stack] && [Memory Heap]
+
+Blocking Code vs Non Blocking code
+- https://www.youtube.com/watch?v=zgt5oTD3rRc&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=37
+-- Blocking Code
+--- Read the File Synchronous
+
+-- Non Blocking Code
+--- Read File Async
+ 
+

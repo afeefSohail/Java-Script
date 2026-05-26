@@ -1,4 +1,3 @@
-/*
  - work on LiFo if they are nested function
     function one()
     -function two()
@@ -19,5 +18,3 @@
         |   two()    |
         |   one()    |
         |   GEC.     |     
-
-*/
