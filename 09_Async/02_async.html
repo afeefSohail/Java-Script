@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, 
+    initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Afeef Java Script Code</h1>
+    <button id = "stop"> Stop </button>
+</body>
+<script>
+    const sayAfeef = function(){
+        console.log("Afeef");   
+    }
+
+    const changeText = function() {
+        document.querySelector('h1').
+        innerHTML = "Best JS Series"
+    }
+    
+    const changeTextSetTime = setTimeout(changeText, 2000)//2 second     
+    
+    document.querySelector('#stop')
+    .addEventListener('click', function() {
+        clearTimeout(changeTextSetTime)
+        console.log("Stopped");
+    })
+</script>
+</html>

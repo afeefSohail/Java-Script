@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Afeef Java Script Code</h1>
+    <button id="start"> Start </button>
+    <button id="stop"> Stop </button>
+</body>
+<script>
+
+    let intervalId;
+
+    const currDateWithMyName = function (str) {
+        console.log(str, Date.now());
+    }
+
+
+
+    function startPrinting() {
+        if (!intervalId) {
+            intervalId = setInterval(
+                currDateWithMyName,
+                1000, //1 second   
+                "Afeef Sohail "
+            )
+        }
+    }
+
+
+    function stopPrinting() {
+        if (intervalId) {
+            clearInterval(intervalId);
+            console.log(`Stopped Interval: ${intervalId}`);
+            intervalId = null;
+        }
+    }
+
+    document.querySelector('#start')
+        .addEventListener('click', startPrinting);
+
+    document.querySelector('#stop')
+        .addEventListener('click', stopPrinting);
+
+</script>
+
+</html>
