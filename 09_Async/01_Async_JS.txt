@@ -1,6 +1,7 @@
 - Default (Java Script)
--- By default (Synchronous)
+-- By default Engin of Java Script is (Synchronous)
 -- By default (Single Thread)
+-- But you can make him Async by using Api, setTimeout, setTimeInterval
 
 - Execution Context
 -- execute one line of code at a time
