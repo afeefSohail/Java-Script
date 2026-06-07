@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clouser</title>
+</head>
+
+<body style="background-color: #313131;">
+    <button id="orange"> Orange </button>
+    <button id="green"> Green </button>
+</body>
+<script>
+    // Lexical Scooping
+    // function makeFunc() {
+    //     let name = "Mozilla"; // name is a local variable created by init
+    //     function displayName() {
+    //         console.log(name); // use variable declared in the parent function
+    //     }
+    //     displayName();
+    // }
+    // makeFunc();
+
+    // Clousre
+    // function makeFunc() {
+    //     const name = "Mozilla";
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+
+    //     // Now lexical scope of display name also return.
+    //     // lexical scope of displayName function means 
+    //     // outer and inner function (displayName) also return
+    //     // When ever function returns it returns with his lexial scoope
+    //     return displayName;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc();
+
+    function clickHandler(color) {
+        //document.body.style.backgroundColor = color
+        return function() {
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+
+    document.getElementById('orange').onclick = clickHandler('orange')
+    document.getElementById('green').onclick = clickHandler('green')
+</script>
+</html>
