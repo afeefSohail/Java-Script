@@ -9,7 +9,7 @@
 ## 📁 Repository Structure
 
 ```text
-JAVA-SCRIPT/
+01-JAVA-SCRIPT/
 ├── 01_basics/
 │   ├── 01_variables.js
 │   ├── 02_datatypes.js
